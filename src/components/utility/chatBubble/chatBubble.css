@@ -1,0 +1,23 @@
+.chat-bubble {
+    max-width: 60%; /* Maximum width for the bubble */
+    padding: 0.8em;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    word-wrap: break-word; /* Ensures long words break and wrap */
+    white-space: pre-wrap; /* Preserves line breaks and wraps text */
+    display: block; /* Ensures the bubble expands with content */
+}
+
+.query {
+    background-color: #DCD7C9;
+    color: #000;
+    /* align-self: flex-end; */
+    margin-left: auto; /* Pushes the bubble to the right */
+}
+
+.response {
+    background-color: #fff;
+    color: #000;
+    /* align-self: flex-start; */
+    margin-right: auto; /* Pushes the bubble to the left */
+}

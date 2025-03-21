@@ -1,0 +1,41 @@
+.header {
+  height: 5em;
+  background-color: #ffffff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2em; /* Add padding to the sides */
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1; /* Allows it to take up space dynamically */
+  min-width: 0; /* Prevents it from shrinking weirdly */
+}
+
+.logo {
+  height: 2.5em;
+  max-width: 100%;
+}
+
+.right-section {
+  display: flex;
+  gap: 0.8em; /* Space between buttons */
+  flex-shrink: 0; /* Prevent shrinking */
+  max-width: 50%; /* Limit the width of the right section */
+  overflow: hidden; /* Prevent overflow */
+  white-space: nowrap; /* Prevents text wrapping */
+}
+
+.right-section .button {
+  flex-shrink: 0; /* Prevent buttons from shrinking */
+}

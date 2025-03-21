@@ -1,0 +1,65 @@
+.sideDashboard {
+  height: calc(100vh - 5em);
+  width: 5em;
+  background-color: transparent;
+  position: fixed;
+  left: 0;
+  top: 5em;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.floating-btn-container {
+  position: relative; /* Required for hover label positioning */
+}
+
+.floating-btn {
+  width: 4em;
+  height: 4em;
+  border: none;
+  background: none;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+  background-color: #fff;
+}
+
+.floating-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.floating-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Hover Label Styles */
+.hover-label {
+  position: absolute;
+  top: 50%;
+  left: 100%; /* Position the label to the right of the button */
+  transform: translate(10px, -50%); /* Add some spacing */
+  background-color: #2973B2;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  font-size: 0.9em;
+  white-space: nowrap; /* Prevent label text from wrapping */
+  z-index: 1000; /* Ensure the label appears above other elements */
+  pointer-events: none; /* Prevent the label from blocking button clicks */
+}

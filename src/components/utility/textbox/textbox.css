@@ -1,0 +1,37 @@
+.textbox-container {
+  position: fixed;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 0.8em;
+  border-radius: 0.8em;
+  box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  width: 40em;
+  max-width: 90%;
+}
+
+.textbox {
+  flex: 1;
+  border: none;
+  outline: none;
+  resize: none; /* Disable manual resizing */
+  font-size: 1em;
+  font-family: "Arial", sans-serif;
+  padding: 0.5em;
+  line-height: 1.5; /* Line height for consistent row height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 7.5em; /* Maximum height for 5 rows (1.5em line-height * 5 rows) */
+  background: transparent;
+  border-radius: 0.5em;
+  transition: height 0.2s ease-in-out; /* Smooth height transition */
+  height: 2.25em; /* Initial height for 1.5 lines (1.5em line-height * 1.5 rows) */
+}
+
+.textbox::placeholder {
+  color: #999;
+}
